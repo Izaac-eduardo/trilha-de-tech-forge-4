@@ -1,16 +1,18 @@
-var Temperatura = /** @class */ (function () {
-    function Temperatura(valorCelsius) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Temperatura {
+    constructor(valorCelsius) {
         this.valorCelsius = valorCelsius;
     }
-    Temperatura.prototype.paraFahrenheit = function () {
+    paraFahrenheit() {
         return this.valorCelsius * 9 / 5 + 32;
-    };
-    Temperatura.prototype.paraKelvin = function () {
+    }
+    paraKelvin() {
         return this.valorCelsius + 273.15;
-    };
-    return Temperatura;
-}());
+    }
+}
 // Exemplo de uso
-var temp = new Temperatura(25);
+const temp = new Temperatura(25);
 console.log("Fahrenheit:", temp.paraFahrenheit());
 console.log("Kelvin:", temp.paraKelvin());
+//# sourceMappingURL=Exercicio4Temperatura.js.map

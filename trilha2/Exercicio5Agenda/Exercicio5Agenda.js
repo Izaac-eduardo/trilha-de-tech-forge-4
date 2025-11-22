@@ -1,19 +1,21 @@
-var Agenda = /** @class */ (function () {
-    function Agenda() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Agenda {
+    constructor() {
         this.compromissos = [];
     }
-    Agenda.prototype.adicionarCompromisso = function (compromisso) {
+    adicionarCompromisso(compromisso) {
         this.compromissos.push(compromisso);
-    };
-    Agenda.prototype.listarCompromissos = function () {
-        this.compromissos.forEach(function (c, i) {
-            console.log("".concat(i + 1, ". ").concat(c));
+    }
+    listarCompromissos() {
+        this.compromissos.forEach((c, i) => {
+            console.log(`${i + 1}. ${c}`);
         });
-    };
-    return Agenda;
-}());
+    }
+}
 // Exemplo de uso
-var agenda = new Agenda();
+const agenda = new Agenda();
 agenda.adicionarCompromisso("Reunião às 10h");
 agenda.adicionarCompromisso("Dentista às 15h");
 agenda.listarCompromissos();
+//# sourceMappingURL=Exercicio5Agenda.js.map

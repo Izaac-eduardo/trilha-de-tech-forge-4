@@ -1,14 +1,16 @@
-var Produto = /** @class */ (function () {
-    function Produto(nome, preco, quantidade) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Produto {
+    constructor(nome, preco, quantidade) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
-    Produto.prototype.valorTotalEstoque = function () {
+    valorTotalEstoque() {
         return this.preco * this.quantidade;
-    };
-    return Produto;
-}());
+    }
+}
 // Exemplo de uso
-var produto = new Produto("Teclado", 150, 10);
+const produto = new Produto("Teclado", 150, 10);
 console.log(produto.valorTotalEstoque());
+//# sourceMappingURL=Exercicio3Produto.js.map

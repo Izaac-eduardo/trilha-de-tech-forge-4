@@ -1,16 +1,18 @@
-var Livro = /** @class */ (function () {
-    function Livro(titulo, autor, paginas) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Livro {
+    constructor(titulo, autor, paginas) {
         this.titulo = titulo;
         this.autor = autor;
         this.paginas = paginas;
         this.lido = false;
     }
-    Livro.prototype.marcarComoLido = function () {
+    marcarComoLido() {
         this.lido = true;
-    };
-    return Livro;
-}());
+    }
+}
 // Exemplo de uso
-var livro = new Livro("Clean Code", "Robert C. Martin", 464);
+const livro = new Livro("Clean Code", "Robert C. Martin", 464);
 livro.marcarComoLido();
 console.log(livro.lido);
+//# sourceMappingURL=Exercicio2Livro.js.map
